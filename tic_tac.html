@@ -1,0 +1,209 @@
+<html> 
+<head> 
+<title> tic_tac </title>
+</head>
+<style>
+.b
+{
+background-color:rgb(14,39,61);
+}
+.img
+{
+height:35%;
+width:100%;
+}
+.box
+{
+border-color:white;
+border-width:8px;
+height:90px;
+width:90px;
+color:orange;
+font-size:50px;
+}
+.div
+{
+margin-left:40%;
+}
+</style>
+
+<body class="b">
+<img src="ttt.jpg" class="img">
+<br><br><br><br>
+<div class="div">
+<input type="button" onclick='f1()' id="b1" class="box"> 
+<input type="button" onclick='f2()' id="b2" class="box">  
+<input type="button" onclick='f3()' id="b3" class="box">
+<br>
+<input type="button" onclick='f4()' id="b4" class="box"> 
+<input type="button" onclick='f5()'id="b5"
+class="box">  
+<input type="button" onclick='f6()' id="b6" class="box"> 
+<br>
+<input type="button" onclick='f7()' id="b7" class="box">
+<input type="button" onclick='f8()' id="b8" class="box">  
+<input type="button" onclick='f9()' id="b9" class="box"> 
+</div> 
+<br>
+<input type="text"  id="s1" value="0" visiblity="hidden">
+</body>
+
+<script> 
+
+function f1()
+{
+a=document.getElementById("s1").value;
+if(a==0)
+{
+document.getElementById("b1").value=a;
+document.getElementById("s1").value="X";
+}
+else
+{
+document.getElementById("b1").value="X";
+document.getElementById("s1").value="0";
+}
+}
+function f2()
+{
+a=document.getElementById("s1").value;
+if(a=="X")
+{
+document.getElementById("b2").value=a;
+document.getElementById("s1").value="0";
+}
+else
+{
+document.getElementById("b2").value="0";
+document.getElementById("s1").value="X";
+}
+}
+function f3()
+{
+a=document.getElementById("s1").value;
+if(a==0)
+{
+document.getElementById("b3").value=a;
+document.getElementById("s1").value="X";
+}
+else
+{
+document.getElementById("b3").value="X";
+document.getElementById("s1").value="0";
+}
+}
+function f4()
+{
+a=document.getElementById("s1").value;
+if(a=="X")
+{
+document.getElementById("b4").value=a;
+document.getElementById("s1").value="0";
+}
+else
+{
+document.getElemntById("b4").value="0";
+document.getElementById("s1").value="X";
+}
+}
+function f5()
+{
+a=document.getElementById("s1").value;
+if(a==0)
+{
+document.getElementById("b5").value=a;
+document.getElementById("s1").value="X";
+}
+else
+{
+document.getElementById("b5").value="X";
+document.getElementById("s1").value="0";
+}
+}
+function f6()
+{
+a=document.getElementById("s1").value;
+if(a=="X")
+{
+document.getElementById("b6").value=a;
+document.getElementById("s1").value="0";
+}
+else
+{
+document.getElementById("b6").value="0";
+document.getElementById("s1").value="X";
+}
+}
+function f7()
+{
+a=document.getElementById("s1").value;
+if(a==0)
+{
+document.getElementById("b7").value=a;
+document.getElementById("s1").value="X";
+}
+else
+{
+document.getElementById("b7").value="X";
+document.getElementById("s1").value="0";
+}
+}
+function f8()
+{
+a=document.getElementById("s1").value;
+if(a=="X")
+{
+document.getElementById("b8").value=a;
+document.getElementById("s1").value="0";
+}
+else
+{
+document.getElementById("b8").value="0";
+document.getElementById("s1").value="X";
+}
+}
+function f9()
+{
+a=document.getElementById("s1").value;
+if(a==0)
+{
+document.getElementById("b9").value=a;
+document.getElementById("s1").value="X";
+}
+else
+{
+document.getElementById("b9").value="X";
+document.getElementById("s1").value="0";
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
